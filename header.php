@@ -15,16 +15,31 @@
 
 <header>
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
+     <div class="headtitle">
+        <h1>Mohammad Rezaei</h1>
+       <div class="lineFlash"></div>
+     </div>
+     <div class="headerMenu">
+      <div class="waveLeft">
+         <img src="" alt="">
+       </div>
+       <div class="aboutMenu">
+         <a href="#about"><h2>about</h2></a>
+       </div>
+       <div class="aboutPortfolio">
+         <a href="#portfolio"><h2>portfolio</h2></a>
+       </div>
+       <div class="aboutSkills">
+         <a href="#skills"><h2>skills</h2></a>
+       </div>
+       <div class="aboutContact">
+         <a href="#contact"><h2>contact</h2></a>
+       </div>
+       <div class="waveRight">
+         <img src="" alt="">
+       </div>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
+     </div>
   </div> <!-- /.container -->
 </header><!--/.header-->
 

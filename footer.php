@@ -1,6 +1,28 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+    <section id="contact">
+    <div class="contactHead">
+    	<img src="" alt="">
+    	<h2>contact</h2>
+    </div>
+    	<div class="contactMain">
+    		<div class="contactText">
+    			<p>MOHAMMAD REZAEI</p>
+    			<a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
+    		</div>
+    		
+    		
+    		<div class="contactImg"> 
+    			<?php while( has_sub_fields('social_icons') ): ?>
+    					
+    			       <?php $imageFooter = get_sub_field('social_image') ?>  
+    			       <!-- <pre><?php print_r($imageFooter); ?></pre>    -->
+    			       <a href="<?php the_sub_field('social_link'); ?>"> <img src="<?php echo $imageFooter['sizes']['medium'] ?>" alt=""> </a>
+    			      
+    			     <?php endwhile;//end of contact loop ?>
+    			</div>
+    		</div>
+    	</section>
   </div>
 </footer>
 
