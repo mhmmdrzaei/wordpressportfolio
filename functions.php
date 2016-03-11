@@ -49,6 +49,11 @@ function hackeryou_styles(){
 	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
 	
 	wp_enqueue_style('devicon', 'https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css');
+	
+	wp_enqueue_style('animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css');
+
+
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');

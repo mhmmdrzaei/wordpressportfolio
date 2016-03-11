@@ -16,12 +16,37 @@
 <header>
   <div class="container">
      <div class="headtitle">
-        <h1>Mohammad Rezaei</h1>
+        <svg viewBox="0 0 600 300">
+
+          <!-- Symbol -->
+          <symbol id="s-text">
+            <text text-anchor="middle"
+                  x="50%" y="50%" dy=".35em">
+              MOHAMMAD REZAEI 
+            </text>
+          </symbol>  
+
+          <!-- Duplicate symbols -->
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+
+        </svg>
+        <div class="nameAnimate">
+          <h1>Mohammad Rezaei</h1>
+        </div>
        <div class="lineFlash"></div>
      </div>
      <div class="headerMenu">
       <div class="waveLeft">
-         <img src="" alt="">
+         <img src="<?php bloginfo('template_directory'); ?>/images/waveleft.png" alt="">
        </div>
        <div class="aboutMenu">
          <a href="#about"><h2>about</h2></a>
@@ -36,7 +61,7 @@
          <a href="#contact"><h2>contact</h2></a>
        </div>
        <div class="waveRight">
-         <img src="" alt="">
+         <img src="<?php bloginfo('template_directory'); ?>/images/waveright.png" alt="">
        </div>
 
      </div>

@@ -2,7 +2,7 @@
   <div class="container">
     <section id="contact">
     <div class="contactHead">
-    	<img src="" alt="">
+    	<img src="<?php bloginfo('template_directory'); ?>/images/peace.png" alt="">
     	<h2>contact</h2>
     </div>
     	<div class="contactMain">

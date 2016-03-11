@@ -4,7 +4,7 @@
  <!-- ABOUT -->
 	<section id="about">
 		<div class="aboutHead">
-			<img src="" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/images/nails.png" alt="">
 			<h2>about</h2>
 		</div>
 		<div class="about">
@@ -18,8 +18,8 @@
 <!-- PORTFOLIO -->
 
 	<section id="portfolio">
-	<div class="portfolioHead">
-			<img src="" alt="">
+	<div class="portfolioHead" >
+			<img src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="" class="animated lightSpeedIn">
 			<h2>portfolio</h2>
 		</div>
 		<div class="portfolioMain">
@@ -42,16 +42,16 @@
 <!-- SKILLS -->
 	<section id="skills">
 		<div class="skillsHead">
-			<img src="" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/images/glasses.png" alt="">
 			<h2>skills</h2>
 		</div>
 		<div class="skillsmain">
-			<?php while( has_sub_fields('skills') ): ?>
+			<?php while( has_sub_fields('skils') ): ?>
 					
 					<?php $devicon = get_sub_field('skills_dev') ?> 
-					<pre><?php print_r($devicon); ?></pre>
+					<?php echo $devicon ?>
 			
-			        	<p><?php the_sub_field('skills_dev') ?></p>
+			        	<!-- <?php the_sub_field('skills_dev') ?> -->
 			      
 			    	<?php endwhile;//end of skills loop ?>	
 			    </div>
