@@ -19,19 +19,22 @@
 
 	<section id="portfolio">
 	<div class="portfolioHead" >
-			<img src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="" class="animated lightSpeedIn">
 			<h2>portfolio</h2>
+			<img src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="">
+			
 		</div>
 		<div class="portfolioMain">
 			<?php while( has_sub_fields('portfolio_items') ): ?>
-			    <?php $image = get_sub_field('images') ?>  
-			    <!-- <pre><?php print_r($image); ?></pre>    -->
-			    <img src="<?php echo $image['sizes']['medium'] ?>" alt=""> 
-			    <div class="portfolioDesc">
-			    	<p class="portfolioTitle"><?php the_sub_field('project_title') ?></p>
-			    	<p><?php the_sub_field('project_description'); ?></p>
-			    	<div class="viewLive">
-					<a href="<?php the_sub_field('project_link'); ?>">VIEW LIVE</a>
+
+			    <div class="portfolioItem">
+			    	<?php $image = get_sub_field('images') ?> 
+			    	<img src="<?php echo $image['sizes']['large'] ?>" alt=""> 
+			    	<div class="portfolioDesc">
+			    		<p class="portfolioTitle"><?php the_sub_field('project_title') ?></p>
+			    		<p><?php the_sub_field('project_description'); ?></p>
+			    		<div class="viewLive">
+			    			<a href="<?php the_sub_field('project_link'); ?>">VIEW LIVE</a>
+			    		</div>
 			    	</div>
 			    </div>
 			       

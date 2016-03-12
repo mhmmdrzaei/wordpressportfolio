@@ -2,13 +2,13 @@
   <div class="container">
     <section id="contact">
     <div class="contactHead">
+        <h2>contact</h2>
     	<img src="<?php bloginfo('template_directory'); ?>/images/peace.png" alt="">
-    	<h2>contact</h2>
     </div>
     	<div class="contactMain">
     		<div class="contactText">
-    			<p>MOHAMMAD REZAEI</p>
-    			<a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
+    			<h3>MOHAMMAD REZAEI</h3>
+    			<a href="mailto:<?php the_field('email') ?>"><h3><?php the_field('email') ?></h3></a>
     		</div>
     		
     		
@@ -16,7 +16,6 @@
     			<?php while( has_sub_fields('social_icons') ): ?>
     					
     			       <?php $imageFooter = get_sub_field('social_image') ?>  
-    			       <!-- <pre><?php print_r($imageFooter); ?></pre>    -->
     			       <a href="<?php the_sub_field('social_link'); ?>"> <img src="<?php echo $imageFooter['sizes']['medium'] ?>" alt=""> </a>
     			      
     			     <?php endwhile;//end of contact loop ?>

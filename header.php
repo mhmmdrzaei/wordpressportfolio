@@ -16,7 +16,7 @@
 <header>
   <div class="container">
      <div class="headtitle">
-        <svg viewBox="0 0 600 300">
+        <svg viewBox="0 0 600 100">
 
           <!-- Symbol -->
           <symbol id="s-text">
@@ -39,30 +39,29 @@
                ></use>
 
         </svg>
-        <div class="nameAnimate">
-          <h1>Mohammad Rezaei</h1>
-        </div>
        <div class="lineFlash"></div>
      </div>
      <div class="headerMenu">
-      <div class="waveLeft">
-         <img src="<?php bloginfo('template_directory'); ?>/images/waveleft.png" alt="">
-       </div>
-       <div class="aboutMenu">
-         <a href="#about"><h2>about</h2></a>
+      
+       <div class="aboutMenu ">
+        <div class="waveLeft">
+           <img src="<?php bloginfo('template_directory'); ?>/images/waveleft.png" alt="">
+         </div>
+         <a href="#about"><h2 class="nameAnimate">about</h2></a>
        </div>
        <div class="aboutPortfolio">
-         <a href="#portfolio"><h2>portfolio</h2></a>
+         <a href="#portfolio"><h2 class="nameAnimate">portfolio</h2></a>
        </div>
        <div class="aboutSkills">
-         <a href="#skills"><h2>skills</h2></a>
+         <a href="#skills"><h2 class="nameAnimate">skills</h2></a>
        </div>
        <div class="aboutContact">
-         <a href="#contact"><h2>contact</h2></a>
-       </div>
-       <div class="waveRight">
+         <a href="#contact"><h2 class="nameAnimate">contact</h2></a>
+         <div class="waveRight">
          <img src="<?php bloginfo('template_directory'); ?>/images/waveright.png" alt="">
        </div>
+       </div>
+       
 
      </div>
   </div> <!-- /.container -->

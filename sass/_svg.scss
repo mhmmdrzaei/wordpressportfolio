@@ -8,7 +8,7 @@
   fill: none;
   stroke-width: 2;
   stroke-linejoin: round;
-  stroke-dasharray: 700 330;
+  stroke-dasharray: 700 230;
   stroke-dashoffset: 0;
   -webkit-animation: stroke 10s ease;
   animation: stroke 10s ease;
@@ -62,26 +62,15 @@ html, body {
 
 .headtitle {
   background-size: .2em 100%;
-  @include fontSize(30);
+  @include fontSize(35);
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 40px;
 }
 
 svg {
-  position: absolute;
-  left: -10px;
   width: 100%;
   height: 100%;
-}
+  position: relative;
+  top: 50px;
+  }
 
-// name animate
-@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-.nameAnimate {
-  opacity:0;
-  animation: fadeIn 1s;
-  animation-fill-mode:forwards;
-  animation-duration:1s;
-  animation-delay: 6s;
-
-
-}

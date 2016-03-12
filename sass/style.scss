@@ -43,13 +43,39 @@ a {
 }
 
 h1{
-	@include fontSize(30);
+	@include fontSize(35);
 	font-family: $font;
 	color:white;
 
 }
+h2 {
+	@include fontSize(25);
+	font-family: $font;
+	color:white;
+	a {
+		&:hover {
+		color: #7377FF;
+    	}
+	}
+
+}
+h3 {
+	@include fontSize(14);
+	color:white;
+	margin: 0;
+
+}
+
+a {
+	text-decoration: none;
+}
+p {
+	color:white;
+	@include fontSize(11);
+
+}
+
 img {
-	max-width: 100%;
 }
 
 body {
@@ -68,30 +94,214 @@ body {
 
 // animations ------------------------------
 
-@keyframes waveRightUp {
-
-    0% {transform:rotate(0deg) translateX(0px)}
+@keyframes waveRight {
+     0% {transform:rotate(0deg) translateX(0px)}
     33% {transform:rotate(2deg) translateX(5px) }
-   	// 66% {transform:rotate(4deg) translateX(4px) rotate(2deg)}
-    // 100% {transform:rotate(.1deg) translateX(.1px) rotate(.1deg)}
 }
 
-@keyframes waveRightDown {
-    from {transform:rotate(6deg) translateX(6px) rotate(3deg)}
-    to {transform:rotate(0deg) translateX(0px) rotate(0deg)}
-}
 .waveRight {
-	animation: waveRightUp 2s ease-in-out infinite;
+	animation: fadeIn 6s, waveRight 2s ease-in-out infinite;
 
 }
+@keyframes waveLeft {
+     0% {transform:rotate(0deg) translateX(0px)}
+    33% {transform:rotate(-2deg) translateX(-5px) }
+}
+.waveLeft {
+	animation: fadeIn 6s, waveLeft 2s ease-in-out infinite;
 
-.aboutHead,.portfolioHead,.skillsHead,.contactHead {
+
+}
+// Menu items animation
+
+.aboutHead, .skillsHead {
 	img{
 		transition: 0.6s all;
 		&:hover {
 			transform: rotate(720deg);
 		}
 	}
+}
+.portfolioHead,.contactHead {
+	img{
+		transition: 0.6s all;
+		&:hover {
+			transform: rotate(-720deg);
+		}
+	}
+}
+
+// name for menue items animate
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+h2.nameAnimate {
+  opacity:0;
+  animation: fadeIn 3s;
+  animation-fill-mode:forwards;
+  animation-duration:1s;
+  animation-delay: 3s;
+  &:hover {
+		color: #7377FF;
+		text-decoration: underline;
+    	}
+
+
+}
+// MENU ----------------------------------
+
+.aboutMenu {
+	display: flex;
+	width: 25%;
+    text-align: right;
+    .waveLeft img {
+    	width: 85%;
+	}
+}
+.aboutPortfolio {
+	text-align: right;
+    width: 47%;
+    padding-bottom: 1px;
+}
+.aboutSkills {
+	text-align: right;
+    width: 63%;
+}
+.aboutContact {
+	display: flex;
+	text-align: left;
+	justify-content: flex-end;
+	width: 100%;
+	.waveRight img {
+	width: 60%;
+	}
+}
+
+
+// about section 
+.aboutHead {
+	display: flex;
+	padding: 20px 0;
+	h2 {
+    text-align: right;
+	}
+	img {
+	width: 10%;
+	height: 10%;
+	padding-right: 5px;
+	}
+}
+.about {
+	border: 5px solid white;
+    margin: 0 5%;
+    padding: 3%;
+}
+//portfolio
+.portfolioHead {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 0;
+
+	h2 {
+    text-align: left;
+	}
+	img {
+	width: 10%;
+	height: 10%;
+	position: relative;
+    top: 20px;
+    padding-left: 5px;
+
+	}
+}
+.portfolioItem {
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+	padding: 50px 0;
+	.portfolioDesc {
+		width: 35%;
+		text-align: right;
+		align-self: center; 
+	.portfolioTitle{
+			text-transform: uppercase;
+			text-decoration: underline;
+			font-weight: 700;
+
+		}
+	.viewLive{
+			border: 3px solid white;
+			padding: 10px;
+			width: 135px;
+			margin: 25px auto;
+			text-align: center;
+			
+			a{
+				color: white;
+			}
+		}
+	}
+}
+.portfolioItem:nth-child(odd){
+	flex-direction: row-reverse;
+	.portfolioDesc {
+		text-align: left;
+	}
+}
+
+
+//skills
+.skillsHead {
+	display: flex;
+	padding: 20px 0;
+	h2 {
+    text-align: right;
+	}
+	img {
+	width: 10%;
+	height: 10%;
+	padding-right: 5px;
+	}
+}
+.skillsmain {
+	text-align: center;
+    font-size: 55px;
+    color: white;
+    // text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    i:nth-child(odd){
+	color:#9AABC0;
+}
+}
+
+//contact
+.contactHead {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 0;
+
+	h2 {
+    text-align: left;
+	}
+	img {
+	width: 10%;
+	height: 10%;
+	padding-left: 5px;
+
+	}
+}
+.contactMain {
+	display: flex;
+
+	.contactImg{
+		align-self: center; 
+		img {
+			width: 15%;
+		}
+	}
+	.contactText{
+		width: 100%;
+	}
+}
+footer {
+	padding-bottom: 35px;
 }
 
 
