@@ -72,6 +72,13 @@ a {
 p {
 	color:white;
 	@include fontSize(11);
+	a {
+		color:white;
+		text-decoration: underline;
+		&:hover {
+			color: #44BEFE;
+		}
+	}
 
 }
 
@@ -135,7 +142,8 @@ body {
 	}
 }
 .spin {
-	transform: rotate(720deg);
+	transform: rotate(1440deg);
+	animation-delay: 2s;
 }
 // name for menue items animate
 @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
@@ -152,7 +160,9 @@ h2.nameAnimate {
 
 // MENU ----------------------------------
 .headerMenu{
-	background: url('images/mern.png');
+	background: url('images/mern.png') center;
+	background-repeat: repeat-x;
+	animation: fadeIn 1s;
 }
 .aboutMenu {
 	display: flex;
@@ -343,8 +353,6 @@ h2.nameAnimate {
 footer {
 	padding-bottom: 35px;
 }
-
-
 // Media Queries 
 @media(max-width: 670px){
 	h3 {
@@ -361,6 +369,8 @@ footer {
 @media (max-width: 630px){
 	.fuckyou {
 	display: inline-block;
+
+
 }
 
 .dropdown {
@@ -369,26 +379,25 @@ footer {
 		width: 93%;
 		background:#EDCCB6;
 		z-index: 99;
-		margin: 42px 0;
+		margin: 10px 0;
 		top: 0;
     	padding: 60px 0px;
     	border: 5px solid white;
+    	// z-index: 101;
     	img {
     		display: none;
     		animation: none;
     	}
 }
-.fa {
-	display: inline-block;
-}
+
 .fa-bars {
 		display: block;
-		width: 100%;
+		width: 15%;
 		padding: 10px 15px;
 		color: #FEF800;
 		position: fixed;
-		top: 40px;
-		z-index: 100
+		top: 10px;
+		z-index: 100;
 		}
 
 h2.nameAnimate {
