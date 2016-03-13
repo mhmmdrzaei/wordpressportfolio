@@ -3,8 +3,8 @@
   <div class="container">
  <!-- ABOUT -->
 	<section id="about">
-		<div class="aboutHead">
-			<img src="<?php bloginfo('template_directory'); ?>/images/nails.png" alt="">
+		<div class="aboutHead spin">
+			<img src="<?php bloginfo('template_directory'); ?>/images/nails.png" class="spin" alt="">
 			<h2>about</h2>
 		</div>
 		<div class="about">
@@ -20,7 +20,7 @@
 	<section id="portfolio">
 	<div class="portfolioHead" >
 			<h2>portfolio</h2>
-			<img src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/images/money.png" class="spin" alt="">
 			
 		</div>
 		<div class="portfolioMain">
@@ -28,7 +28,7 @@
 
 			    <div class="portfolioItem">
 			    	<?php $image = get_sub_field('images') ?> 
-			    	<img src="<?php echo $image['sizes']['large'] ?>" alt=""> 
+			    	<img src="<?php echo $image['sizes']['medium'] ?>" alt=""> 
 			    	<div class="portfolioDesc">
 			    		<p class="portfolioTitle"><?php the_sub_field('project_title') ?></p>
 			    		<p><?php the_sub_field('project_description'); ?></p>
@@ -45,7 +45,7 @@
 <!-- SKILLS -->
 	<section id="skills">
 		<div class="skillsHead">
-			<img src="<?php bloginfo('template_directory'); ?>/images/glasses.png" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/images/glasses.png" class="spin" alt="">
 			<h2>skills</h2>
 		</div>
 		<div class="skillsmain">

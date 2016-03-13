@@ -41,12 +41,16 @@
         </svg>
        <div class="lineFlash"></div>
      </div>
-     <div class="headerMenu">
+     <div class="fuckyou">
+       <div class="fa fa-bars fa-2x" title="menu"></div>
+     </div>
+    
+     <div class="headerMenu dropdown">
       
        <div class="aboutMenu ">
         <div class="waveLeft">
            <img src="<?php bloginfo('template_directory'); ?>/images/waveleft.png" alt="">
-         </div>
+          </div>
          <a href="#about"><h2 class="nameAnimate">about</h2></a>
        </div>
        <div class="aboutPortfolio">
@@ -59,7 +63,7 @@
          <a href="#contact"><h2 class="nameAnimate">contact</h2></a>
          <div class="waveRight">
          <img src="<?php bloginfo('template_directory'); ?>/images/waveright.png" alt="">
-       </div>
+        </div>
        </div>
        
 

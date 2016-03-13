@@ -3,7 +3,7 @@
     <section id="contact">
     <div class="contactHead">
         <h2>contact</h2>
-    	<img src="<?php bloginfo('template_directory'); ?>/images/peace.png" alt="">
+    	<img class="spin" src="<?php bloginfo('template_directory'); ?>/images/peace.png" alt="">
     </div>
     	<div class="contactMain">
     		<div class="contactText">

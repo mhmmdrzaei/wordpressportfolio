@@ -85,10 +85,14 @@ body {
 .container {
 	max-width: 900px;
 	margin: 0 auto;
+	padding: 0 3%;
 }
 
 .full {
 	width: 100%;
+}
+.fuckyou {
+	display: none;
 }
 
 
@@ -100,7 +104,7 @@ body {
 }
 
 .waveRight {
-	animation: fadeIn 6s, waveRight 2s ease-in-out infinite;
+	animation: fadeIn 10s, waveRight 2s ease-in-out infinite;
 
 }
 @keyframes waveLeft {
@@ -108,7 +112,7 @@ body {
     33% {transform:rotate(-2deg) translateX(-5px) }
 }
 .waveLeft {
-	animation: fadeIn 6s, waveLeft 2s ease-in-out infinite;
+	animation: fadeIn 10s, waveLeft 2s ease-in-out infinite;
 
 
 }
@@ -130,49 +134,81 @@ body {
 		}
 	}
 }
-
+.spin {
+	transform: rotate(720deg);
+}
 // name for menue items animate
 @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 h2.nameAnimate {
   opacity:0;
-  animation: fadeIn 3s;
+  animation: fadeIn 1s;
   animation-fill-mode:forwards;
   animation-duration:1s;
-  animation-delay: 3s;
-  &:hover {
-		color: #7377FF;
-		text-decoration: underline;
-    	}
+  animation-delay: 2s;
+  
 
 
 }
-// MENU ----------------------------------
 
+// MENU ----------------------------------
+.headerMenu{
+	background: url('images/mern.png');
+}
 .aboutMenu {
 	display: flex;
 	width: 25%;
     text-align: right;
+   	h2 {
+   		 &:hover {
+		color: #7377FF;
+		// text-decoration: underline;
+    	}
+   	}
     .waveLeft img {
-    	width: 85%;
+    	// width: 85%;
 	}
 }
 .aboutPortfolio {
 	text-align: right;
     width: 47%;
     padding-bottom: 1px;
+       	h2 {
+   		 &:hover {
+		color: #FEF800;
+		// text-decoration: underline;
+    	}
+   	}
 }
 .aboutSkills {
 	text-align: right;
     width: 63%;
+    h2 {
+   		 &:hover {
+		color: #44BEFE;
+		// text-decoration: underline;
+    	}
+   	}
 }
 .aboutContact {
 	display: flex;
 	text-align: left;
 	justify-content: flex-end;
 	width: 100%;
+	 h2 {
+   		 &:hover {
+		color: #BE89FE;
+		// text-decoration: underline;
+    	}
+   	}
 	.waveRight img {
-	width: 60%;
+	// width: 60%;
 	}
+}
+
+//dropdown hamburger 
+
+.fa-bars{
+	display: none;
 }
 
 
@@ -259,6 +295,8 @@ h2.nameAnimate {
 	width: 10%;
 	height: 10%;
 	padding-right: 5px;
+	position: relative;
+    top: 20px;
 	}
 }
 .skillsmain {
@@ -284,6 +322,8 @@ h2.nameAnimate {
 	width: 10%;
 	height: 10%;
 	padding-left: 5px;
+	position: relative;
+    top: 20px;
 
 	}
 }
@@ -305,6 +345,150 @@ footer {
 }
 
 
+// Media Queries 
+@media(max-width: 670px){
+	h3 {
+			@include fontSize(11);
+		}
+	.portfolioItem img {
+    	max-width: 65%;
+	}
+	.skillsmain {
+		font-size: 38px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 630px){
+	.fuckyou {
+	display: inline-block;
+}
+
+.dropdown {
+		display: none;
+		position: fixed;
+		width: 93%;
+		background:#EDCCB6;
+		z-index: 99;
+		margin: 42px 0;
+		top: 0;
+    	padding: 60px 0px;
+    	border: 5px solid white;
+    	img {
+    		display: none;
+    		animation: none;
+    	}
+}
+.fa {
+	display: inline-block;
+}
+.fa-bars {
+		display: block;
+		width: 100%;
+		padding: 10px 15px;
+		color: #FEF800;
+		position: fixed;
+		top: 40px;
+		z-index: 100
+		}
+
+h2.nameAnimate {
+    opacity: 1;
+    animation-delay: 0s;
+}
+.aboutMenu, .aboutPortfolio, .aboutSkills, .aboutContact {
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin: 2px 0;
+}
+}
+@media(max-width: 561px){
+
+	h2 {
+		margin: 0;
+		@include fontSize(23);
+	}
+	svg {
+    top: 50px;
+	}
+//menu 
+
+//about 
+	.aboutHead img {
+    	position: relative;
+    	top: -10px;
+    	padding-right: 5px;
+	}
+
+	.about {
+    /* border: 5px solid #fff; */
+    margin: 0 5%;
+    padding: 0;
+    border: none;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    margin-bottom: 20px;
+	}
+
+//portfolio 
+	.portfolioHead {
+		flex-direction: row-reverse;
+		padding-right: 5px;
+		padding-left: 0;
+	}
+	.portfolioHead img {
+	// width: 22%;
+ //    height: 16%;
+    position: relative;
+    top: 0px;
+    padding-left: 5px;
+		}
+
+	.portfolioItem {
+		display: block;
+		padding: 10px 0;
+		img {
+			max-width: 95%;
+			}
+		.portfolioDesc {
+		width: 100%;
+		text-align: center;
+	
+			}
+		}
+	.portfolioItem:nth-child(odd){
+	.portfolioDesc {
+		text-align: center;
+				}
+			}
+	//skills 
+
+.skillsHead img {
+    position: relative;
+    top: 0px;
+    padding-right: 5px;
+    padding-left: 0;
+
+	}
 
 
 
+//contact 
+	.contactHead {
+		flex-direction: row-reverse;
+		padding-right: 5px;
+		padding-left: 0;
+	}
+	.contactHead img {
+    position: relative;
+    top: 0px;
+    padding-right: 5px;
+    padding-left: 0;
+		}
+	.contactMain {
+		display: block;
+	}
+	.contactText{
+		padding: 11px 0;
+	}
+}
