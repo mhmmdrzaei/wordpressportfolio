@@ -52,6 +52,7 @@ h2 {
 	@include fontSize(25);
 	font-family: $font;
 	color:white;
+	letter-spacing: 1px;
 	a {
 		&:hover {
 		color: #7377FF;
@@ -63,13 +64,16 @@ h3 {
 	@include fontSize(14);
 	color:white;
 	margin: 0;
+	letter-spacing: 1px;
 
 }
 
 a {
 	text-decoration: none;
+	color:white;
 }
-p {
+p {	
+	letter-spacing: 1px;
 	color:white;
 	@include fontSize(11);
 	a {
@@ -244,7 +248,7 @@ h2.nameAnimate {
 .portfolioHead {
 	display: flex;
 	justify-content: flex-end;
-	padding: 20px 0;
+	padding: 60px 0 20px 0;
 
 	h2 {
     text-align: left;
@@ -264,24 +268,53 @@ h2.nameAnimate {
 	align-items: center;
 	padding: 50px 0;
 	.portfolioDesc {
-		width: 35%;
+		width: 44%;
 		text-align: right;
 		align-self: center; 
 	.portfolioTitle{
 			text-transform: uppercase;
-			text-decoration: underline;
 			font-weight: 700;
+			letter-spacing: 1px;
+			text-decoration: none;
+			
+			a {
+				text-decoration: none;
+				border-bottom: 3px solid;
+				&:hover {
+					border-bottom: 3px solid #FEF800;
+					 animation: fadeIn .5s;
+				}
+			}
 
 		}
+	.portfolioTitle:nth-child(2){
+		a {
+			&:hover {
+				color:#FEF800;
+			}
+		}
+	}
 	.viewLive{
 			border: 3px solid white;
 			padding: 10px;
 			width: 135px;
 			margin: 25px auto;
 			text-align: center;
+			// color: white;
+			&:hover{
+					background: white;
+					color:#EDCCB6;
+					animation: fadeIn .5s;
+				}
 			
 			a{
-				color: white;
+				// color: white;
+				padding: 12px 11px;
+				&:hover{
+					color:#EDCCB6;
+					background: white;
+				}
+
 			}
 		}
 	}

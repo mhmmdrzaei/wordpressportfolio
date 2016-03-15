@@ -30,10 +30,10 @@
 			    	<?php $image = get_sub_field('images') ?> 
 			    	<img src="<?php echo $image['sizes']['large'] ?>" alt=""> 
 			    	<div class="portfolioDesc">
-			    		<p class="portfolioTitle"><?php the_sub_field('project_title') ?></p>
+			    		<p class="portfolioTitle"><a href="<?php the_sub_field('project_link'); ?>" target="blank"><?php the_sub_field('project_title') ?></a></p>
 			    		<p><?php the_sub_field('project_description'); ?></p>
 			    		<div class="viewLive">
-			    			<a href="<?php the_sub_field('project_link'); ?>">VIEW LIVE</a>
+			    			<a href="<?php the_sub_field('project_link'); ?>" target="blank">VIEW LIVE</a>
 			    		</div>
 			    	</div>
 			    </div>
