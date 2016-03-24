@@ -17,9 +17,11 @@ $(document).ready(function(){
 		// console.log('fuckyou');
 		$(".dropdown").toggle();
 		$('.borderWhite').toggle();
+		$(".fa-bars").toggleClass('fa-borderss');
 		$(".headerMenu a").on("click", function(){
-		console.log('fuckyou');
+		// console.log('fuckyou');
 		$(".headerMenu").hide();
+
 		// $(".skillsHead img").removeClass('spin');
 		// $(".skillsHead img").addClass('spin');
 		// $(".aboutHead img").removeClass('spin');
@@ -34,6 +36,10 @@ $(document).ready(function(){
 	});
 	$(".headerMenu a").on("click", function(){
 		setTimeout(function() {
+			$(".fa-bars").removeClass('fa-borderss');
+			
+		});	
+		setTimeout(function(){
 			$(".skillsHead img").toggleClass('spin');
 			// $(".skillsHead img").addClass('spin');
 			$(".aboutHead img").toggleClass('spin');
@@ -42,7 +48,8 @@ $(document).ready(function(){
 			// $(".portfolioHead img").addClass('spin');
 			$(".contactHead img").toggleClass('spin');
 			// $(".contactHead img").addClass('spin');
-		}, 500);	
+
+		}, 1000);
 
 	});	
 

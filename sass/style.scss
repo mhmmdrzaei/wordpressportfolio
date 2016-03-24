@@ -35,6 +35,9 @@ a {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
 }
+section {
+	padding-top: 45px;
+}
 
 
 .wrapper{
@@ -241,14 +244,14 @@ h2.nameAnimate {
 }
 .about {
 	border: 5px solid white;
-    margin: 0 5%;
+    // margin: 0 5%;
     padding: 3%;
 }
 //portfolio
 .portfolioHead {
 	display: flex;
 	justify-content: flex-end;
-	padding: 60px 0 20px 0;
+	padding: 0 0 20px 0;
 
 	h2 {
     text-align: left;
@@ -295,29 +298,38 @@ h2.nameAnimate {
 		}
 	}
 	.viewLive{
-			border: 3px solid white;
-			padding: 10px;
-			width: 135px;
-			margin: 25px auto;
-			text-align: center;
+			// border: 3px solid white;
+			// padding: 10px;
+			// width: 135px;
+			width: 50%;
+			margin: 0px auto;
+			padding: 30px 0;
+			min-width: 134px;
+			// text-align: center;
 			// color: white;
-			&:hover{
-					background: white;
-					color:#EDCCB6;
-					animation: fadeIn .5s;
-				}
-			
+			// &:hover{
+			// 		background: white;
+			// 		color:#EDCCB6;
+			// 		animation: fadeIn .5s;
+			// 	}
 			a{
 				// color: white;
-				padding: 12px 11px;
+				padding: 12px 20px;
+				border: 3px solid white;
+				text-align: center;
 				&:hover{
 					color:#EDCCB6;
 					background: white;
 				}
 
 			}
-		}
+			
+
+	
 	}
+
+	}
+
 }
 .portfolioItem:nth-child(odd){
 	flex-direction: row-reverse;
@@ -344,7 +356,7 @@ h2.nameAnimate {
 }
 .skillsmain {
 	text-align: center;
-    font-size: 55px;
+    font-size: 50px;
     color: white;
     // text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
     i:nth-child(odd){
@@ -388,6 +400,7 @@ footer {
 }
 // Media Queries 
 @media(max-width: 670px){
+
 	h3 {
 			@include fontSize(11);
 		}
@@ -416,6 +429,7 @@ footer {
 		top: 0;
     	padding: 60px 0px;
     	border: 5px solid white;
+    	animation: none;
     	// z-index: 101;
     	img {
     		display: none;
@@ -425,13 +439,23 @@ footer {
 
 .fa-bars {
 		display: block;
-		width: 15%;
+		background: #EDCCB6;
+		width: 65px;
 		padding: 10px 15px;
 		color: #FEF800;
 		position: fixed;
 		top: 10px;
 		z-index: 100;
+		border-top: 5px solid #EDCCB6;
+		border-left: 5px solid #EDCCB6;
+
 		}
+
+.fa-borderss {
+	border-top: 5px solid white;
+	border-left: 5px solid white;
+	
+}
 
 h2.nameAnimate {
     opacity: 1;

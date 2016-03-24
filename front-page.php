@@ -1,4 +1,5 @@
 <?php get_header();  ?>
+	<!-- <img src="<?php bloginfo('template_directory'); ?>/images/mern.png" alt=""> -->
 
   <div class="container">
  <!-- ABOUT -->
