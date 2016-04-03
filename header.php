@@ -60,8 +60,17 @@
        <div class="lineFlash"></div>
      </div>
      <div class="fuckyou">
-       <div class="fa fa-bars fa-2x " title="menu"></div>
+       <div class="fa fa-bars fa-2x " title="menu">
+        <div id="nav-icon4">
+         <span></span>
+         <span></span>
+         <span></span>
+       </div>
+       </div>
+
+       
      </div>
+
 
     
      <div class="headerMenu dropdown">

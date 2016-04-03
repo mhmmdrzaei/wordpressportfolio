@@ -13,6 +13,9 @@ $(document).ready(function(){
 	    }
 
 	  });
+	$('#nav-icon4').click(function(){
+			$(this).toggleClass('open');
+		});
 	$(".fa-bars").on("click", function(){
 		// console.log('fuckyou');
 		$(".dropdown").toggle();
@@ -22,36 +25,41 @@ $(document).ready(function(){
 		// console.log('fuckyou');
 		$(".headerMenu").hide();
 
-		// $(".skillsHead img").removeClass('spin');
-		// $(".skillsHead img").addClass('spin');
-		// $(".aboutHead img").removeClass('spin');
-		// $(".aboutHead img").addClass('spin');
-		// $(".portfolioHead img").removeClass('spin');
-		// $(".portfolioHead img").addClass('spin');
-		// $(".contactHead img").removeClass('spin');
-		// $(".contactHead img").addClass('spin');
+		$("hamburger").hover(function() {
+		    $(this).css("cursor", "pointer");
+		}, function() {
+		    $(this).css("", "");
+		});
 
 	});	
 		
 	});
 	$(".headerMenu a").on("click", function(){
+	
+			$('#nav-icon4').toggleClass('open');
 		setTimeout(function() {
 			$(".fa-bars").removeClass('fa-borderss');
+			// $(".fa-bars").addClass('hamburger');
+
 			
 		});	
 		setTimeout(function(){
 			$(".skillsHead img").toggleClass('spin');
-			// $(".skillsHead img").addClass('spin');
 			$(".aboutHead img").toggleClass('spin');
-			// $(".aboutHead img").addClass('spin');
 			$(".portfolioHead img").toggleClass('spin');
-			// $(".portfolioHead img").addClass('spin');
 			$(".contactHead img").toggleClass('spin');
-			// $(".contactHead img").addClass('spin');
+
 
 		}, 1000);
 
 	});	
+
+	$(".aboutHead").on("click", function(){
+			$("body").toggleClass('bodyBlack');
+			// $(".fa-bars").addClass('hamburger');
+		});
+			
+
 
 
 });

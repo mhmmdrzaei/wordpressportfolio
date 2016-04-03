@@ -21,7 +21,7 @@
 	<section id="portfolio">
 	<div class="portfolioHead" >
 			<h2>portfolio</h2>
-			<img src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="">
+			<img class="money"src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="">
 			
 		</div>
 		<div class="portfolioMain">
