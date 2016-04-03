@@ -13,17 +13,28 @@ $(document).ready(function(){
 	    }
 
 	  });
+	$(".aboutHead").on("click", function(){
+			$('#dropdownn').removeClass('headerHeaderMenu');
+			$('#dropdownn').toggleClass('dropdown');
+			$('#dropdownn').toggleClass('bodyBlackDrop');
+			$("body, h1, h2, h3, p, a, #dropdownn").toggleClass('bodyBlack');
+
+		});
+
 	$('#nav-icon4').click(function(){
 			$(this).toggleClass('open');
+
 		});
 	$(".fa-bars").on("click", function(){
-		// console.log('fuckyou');
+		$('.headerMenu').css('background', '');
 		$(".dropdown").toggle();
+		$('.bodyBlackDrop').toggle();
 		$('.borderWhite').toggle();
-		$(".fa-bars").toggleClass('fa-borderss');
+		// $(".fa-bars").toggleClass('fa-borderss');
 		$(".headerMenu a").on("click", function(){
 		// console.log('fuckyou');
 		$(".headerMenu").hide();
+
 
 		$("hamburger").hover(function() {
 		    $(this).css("cursor", "pointer");
@@ -35,7 +46,6 @@ $(document).ready(function(){
 		
 	});
 	$(".headerMenu a").on("click", function(){
-	
 			$('#nav-icon4').toggleClass('open');
 		setTimeout(function() {
 			$(".fa-bars").removeClass('fa-borderss');
@@ -54,10 +64,7 @@ $(document).ready(function(){
 
 	});	
 
-	$(".aboutHead").on("click", function(){
-			$("body").toggleClass('bodyBlack');
-			// $(".fa-bars").addClass('hamburger');
-		});
+
 			
 
 

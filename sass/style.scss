@@ -11,6 +11,7 @@
 @import 'footer';
 @import 'svg';
 @import 'hamburger';
+@import 'colorz';
 /*
 ====================================
 Default Styling
@@ -33,9 +34,7 @@ body{
 	font-family: $font;
 	padding: 0;
 }
-.bodyBlack {
-	background: #7377FF;
-}
+
 a {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
@@ -171,7 +170,7 @@ h2.nameAnimate {
 }
 
 // MENU ----------------------------------
-.headerMenu{
+.headerHeaderMenu{
 	background: url('images/mern.png') center;
 	background-repeat: repeat-x;
 	animation: fadeIn 1s;
@@ -245,8 +244,6 @@ h2.nameAnimate {
 	width: 10%;
 	height: 10%;
 	padding-right: 5px;
-	position: relative;
-    top: -20px;
 	}
 }
 .about {
@@ -267,7 +264,7 @@ h2.nameAnimate {
 	width: 10%;
 	height: 10%;
 	position: relative;
-    top: -20px;
+    top: 20px;
     padding-left: 5px;
 
 	}
@@ -350,7 +347,7 @@ h2.nameAnimate {
 	height: 10%;
 	padding-right: 5px;
 	position: relative;
-    top: -20px;
+    top: 20px;
 	}
 }
 .skillsmain {
@@ -377,7 +374,7 @@ h2.nameAnimate {
 	height: 10%;
 	padding-left: 5px;
 	position: relative;
-    top: -20px;
+    top: 20px;
 
 	}
 }
@@ -415,7 +412,6 @@ footer {
 	.fuckyou {
 	display: inline-block;
 
-
 }
 
 .dropdown {
@@ -448,11 +444,11 @@ footer {
 
 		}
 
-.fa-borderss {
-	border-top: 5px solid white;
-	border-left: 5px solid white;
+// .fa-borderss {
+// 	border-top: 5px solid white;
+// 	border-left: 5px solid white;
 	
-}
+// }
 
 h2.nameAnimate {
     opacity: 1;
@@ -474,9 +470,13 @@ h2.nameAnimate {
 	svg {
     top: 50px;
 	}
-	.aboutHead img, .portfolioHead img, .skillsHead img, .contactHead img {
+	.portfolioHead img, .skillsHead img, .contactHead img {
 		width: 15%;
 	}
+	.aboutHead img{
+		width: 17%;
+	}
+
 
 //menu 
 
@@ -489,8 +489,8 @@ h2.nameAnimate {
 
 	.about {
     /* border: 5px solid #fff; */
-    margin: 0 5%;
-    padding: 0;
+    margin: 0 5px;
+    padding: 10px 0;
     border: none;
     border-bottom: 5px solid white;
     border-top: 5px solid white;
