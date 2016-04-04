@@ -1,24 +1,36 @@
 .bodyBlack {
-  background: #610F7F;
-  color:#9AABC0;
+  background: black;
+}
+.bodyWhite {
+  background: #B7CAE5;
+}
+.bodyWhiteText {
+  color: black;
+}
+.bodyRed {
+  background: #E83F6F;
 }
 
-@media (max-width: 630px){
-  .bodyBlackDrop {
-    display: none;
-    position: fixed;
-    width: 93%;
-    background:#610F7F;
-    z-index: 99;
-    margin: 10px 0;
-    top: 0;
-      padding: 60px 0px;
-      border: 5px solid white;
-      animation: none;
-      // z-index: 101;
-      img {
-        display: none;
-        animation: none;
-      }
+.bodyRedText {
+  color:#B7CAE5;
 }
+
+.bodyGreen {
+  background:#84DCC6;
 }
+.bodyGreenText {
+  color:#3E535A;
+}
+.bodyYellow {
+  background:#FFBF00;
+}
+.bodyYellowText {
+  color:#2274A5;
+}
+.bodyAqua{
+  background:#70C1B3;
+}
+.bodyAquaText {
+  color:#F3FFBD;
+}
+

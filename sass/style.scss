@@ -413,6 +413,11 @@ footer {
 	display: inline-block;
 
 }
+// .headerHeaderMenu{
+// 	background: none;
+// 	background-repeat: repeat-x;
+// 	animation: fadeIn 1s;
+// }
 
 .dropdown {
 		display: none;
@@ -431,6 +436,27 @@ footer {
     		animation: none;
     	}
 }
+.bodyBlackDrop {
+    background:black;
+}
+.bodyWhiteDrop {
+    background:#9AABC0;
+}
+
+.bodyRedDrop {
+    background:#2274A5;
+}
+
+.bodyGreenDrop {
+    background:#FF686B;
+}
+.bodyYellowDrop {
+    background:#FFFFFF;
+}
+.bodyAquaDrop {
+    background:#FF1654;
+}
+
 
 .fa-bars {
 		display: block;
