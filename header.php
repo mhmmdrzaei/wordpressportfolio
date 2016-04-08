@@ -59,7 +59,7 @@
         </svg>
        <div class="lineFlash"></div>
      </div>
-     <div class="fuckyou">
+     <div class="fuckyou" id="">
        <div class="fa fa-bars fa-2x " title="menu">
         <div id="nav-icon4">
          <span></span>
