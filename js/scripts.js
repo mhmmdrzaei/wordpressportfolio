@@ -14,40 +14,71 @@ $(document).ready(function(){
 
 	  });
 	$(".waveLeft img").on("click", function(){
+		event.preventDefault();
+			$('body, #dropdownn').removeClass('bodyYellow' , 'bodyGreen' , 'bodyRed'  , 'bodyAqua' , 'bodyWhite');
+			$("h1, h2, h3, p, a").removeClass('bodyAquaText' , 'bodyWhiteText' , 'bodyRedText' , 'bodyGreenText' , 'bodyYellowText');
+			$('#dropdownn').removeClass('bodyAquaDrop' , 'bodyWhiteDrop' , 'bodyGreenDrop' , 'bodyRedDrop' , 'bodyYellowDrop');
 			$('#dropdownn').toggleClass('bodyBlackDrop');
 			$("body, #dropdownn").toggleClass('bodyBlack');
 			// $("h1, h2, h3, p, a").toggleClass('bodyBlackText');
 		});
 	$(".waveRight img").on("click", function(){
+		event.preventDefault();
+			$('body, #dropdownn').removeClass('bodyYellow' , 'bodyGreen' , 'bodyRed'  , 'bodyBlack' , 'bodyAqua');
+			$("h1, h2, h3, p, a").removeClass('bodyBlackText' , 'bodyAquaText' , 'bodyRedText' , 'bodyGreenText' , 'bodyYellowText');
+			$('#dropdownn').removeClass('bodyBlackDrop' , 'bodyAquaDrop' , 'bodyGreenDrop' , 'bodyRedDrop' , 'bodyYellowDrop');
 			$('#dropdownn').toggleClass('bodyWhiteDrop');
 			$("body, #dropdownn").toggleClass('bodyWhite');
 			$("h1, h2, h3, p, a").toggleClass('bodyWhiteText');
 		});
 
 	$(".aboutHead img").on("click", function(){
+		event.preventDefault();
+			$('body, #dropdownn').removeClass('bodyYellow' , 'bodyGreen' , 'bodyAqua'  , 'bodyBlack' , 'bodyWhite');
+			$("h1, h2, h3, p, a").removeClass('bodyBlackText' , 'bodyWhiteText' , 'bodyAquaText' , 'bodyGreenText' , 'bodyYellowText');
+			$('#dropdownn').removeClass('bodyBlackDrop' , 'bodyWhiteDrop' , 'bodyGreenDrop' , 'bodyAquaDrop' , 'bodyYellowDrop');
 			$('#dropdownn').toggleClass('bodyRedDrop');
 			$("body, #dropdownn").toggleClass('bodyRed');
 			$("h1, h2, h3, p, a").toggleClass('bodyRedText');
 		});
 
 	$(".portfolioHead img").on("click", function(){
+		event.preventDefault();
+			
+			
+			$('#dropdownn').removeClass('bodyBlackDrop' , 'bodyWhiteDrop' , 'bodyAquaDrop' , 'bodyRedDrop' , 'bodyYellowDrop');
+
 			$('#dropdownn').toggleClass('bodyGreenDrop');
+			
+			$('body, #dropdownn').removeClass('bodyYellow' , 'bodyAqua' , 'bodyRed'  , 'bodyBlack' , 'bodyWhite');
+
 			$("body, #dropdownn").toggleClass('bodyGreen');
+
+			$("h1, h2, h3, p, a").removeClass('bodyBlackText' , 'bodyWhiteText' , 'bodyRedText' , 'bodyAquaText' , 'bodyYellowText');
+
 			$("h1, h2, h3, p, a").toggleClass('bodyGreenText');
 			// $('.dropdown').css('background: #A5FFD6');
 
 		});
 	$(".skillsHead img").on("click", function(){
-			$('#dropdownn').toggleClass('bodyYellowDrop');
-			$("body, #dropdownn").toggleClass('bodyYellow');
-			$("h1, h2, h3, p, a").toggleClass('bodyYellowText');
+	event.preventDefault();			
+			$('#dropdownn').removeClass('bodyBlackDrop' , 'bodyWhiteDrop' , 'bodyGreenDrop' , 'bodyRedDrop' , 'bodyAquaDrop');
+			$('#dropdownn').addClass('bodyYellowDrop');
+			$('body, #dropdownn').removeClass('bodyAqua' , 'bodyGreen' , 'bodyRed'  , 'bodyBlack' , 'bodyWhite');
+			$("body, #dropdownn").addClass('bodyYellow');
+			$("h1, h2, h3, p, a").removeClass('bodyAquaText', 'bodyBlackText' , 'bodyWhiteText' , 'bodyRedText' , 'bodyGreenText');
+			$("h1, h2, h3, p, a").addClass('bodyYellowText');
 			// $('.dropdown').css('background: #A5FFD6');
 
 		});
-	$(".contactHead img").on("click", function(){
-			$('#dropdownn').toggleClass('bodyAquaDrop');
-			$("body, #dropdownn").toggleClass('bodyAqua');
-			$("h1, h2, h3, p, a").toggleClass('bodyAquaText');
+	$(".contactHead img").on("click", function(){	
+		event.preventDefault();
+			$('#dropdownn').removeClass('bodyBlackDrop' , 'bodyWhiteDrop' , 'bodyGreenDrop' , 'bodyRedDrop' , 'bodyYellowDrop');
+			$('#dropdownn').addClass('bodyAquaDrop');
+			$('body, #dropdownn').removeClass('bodyYellow' , 'bodyGreen' , 'bodyRed'  , 'bodyBlack' , 'bodyWhite');
+			$("body, #dropdownn").addClass('bodyAqua');
+			$("h1, h2, h3, p, a").removeClass('bodyBlackText' , 'bodyWhiteText' , 'bodyRedText' , 'bodyGreenText' , 'bodyYellowText');
+			$("h1, h2, h3, p, a").addClass('bodyAquaText');
 			// $('.dropdown').css('background: #A5FFD6');
 
 		});
