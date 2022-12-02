@@ -83,7 +83,7 @@ function hackeryou_scripts() {
 
   wp_enqueue_script(
     'scripts', //handle
-    get_template_directory_uri() . '/js/main.min.js', //source
+    get_template_directory_uri() . '/dist/main.min.js', //source
     array( 'jquery', 'plugins' ), //dependencies
     null, // version number
     true //load in footer
@@ -275,12 +275,3 @@ function is_blog () {
 	return ( ((is_archive()) || (is_author()) || (is_category()) || (is_home()) || (is_single()) || (is_tag())) && ( $posttype == 'post')  ) ? true : false ;
 }
 
-/* get_post_parent() - Returns the current posts parent, if current post if top level, returns itself */
-function get_post_parent($post) {
-	if ($post->post_parent) {
-		return $post->post_parent;
-	}
-	else {
-		return $post->ID;
-	}
-}

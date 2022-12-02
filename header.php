@@ -77,7 +77,7 @@
       
        <div class="aboutMenu ">
         <div class="waveLeft">
-           <img src="<?php bloginfo('template_directory'); ?>/images/waveleft.png" alt="">
+           <img class='clicker' src="<?php bloginfo('template_directory'); ?>/images/waveleft.png" alt="">
           </div>
          <a href="#about"><h2 class="nameAnimate">about</h2></a>
        </div>
@@ -90,7 +90,7 @@
        <div class="aboutContact">
          <a href="#contact"><h2 class="nameAnimate">contact</h2></a>
          <div class="waveRight">
-         <img src="<?php bloginfo('template_directory'); ?>/images/waveright.png" alt="">
+         <img class='clicker' src="<?php bloginfo('template_directory'); ?>/images/waveright.png" alt="">
         </div>
        </div>
        

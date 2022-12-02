@@ -3,12 +3,12 @@
     <section id="contact">
     <div class="contactHead">
         <h2>contact</h2>
-    	<img class="spin" src="<?php bloginfo('template_directory'); ?>/images/peace.png" alt="">
+    	<img class="spin clicker" src="<?php bloginfo('template_directory'); ?>/images/peace.png" alt="">
     </div>
     	<div class="contactMain">
     		<div class="contactText">
     			<h3>MOHAMMAD REZAEI</h3>
-    			<a href="mailto:<?php the_field('email') ?>"><h3><?php the_field('email') ?></h3></a>
+    			<a href="mailto:<?php the_field('email_hyperlink') ?>"><h3><?php the_field('email') ?></h3></a>
     		</div>
     		
     		

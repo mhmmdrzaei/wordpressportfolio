@@ -1,11 +1,11 @@
 <?php get_header();  ?>
-	<!-- <img src="<?php bloginfo('template_directory'); ?>/images/mern.png" alt=""> -->
+
 
   <div class="container">
  <!-- ABOUT -->
 	<section id="about">
 		<div class="aboutHead spin">
-			<img src="<?php bloginfo('template_directory'); ?>/images/nails.png" alt="">
+			<img class='clicker' src="<?php bloginfo('template_directory'); ?>/images/nails.png" alt="">
 			<h2>about</h2>
 		</div>
 		<div class="about">
@@ -21,7 +21,7 @@
 	<section id="portfolio">
 	<div class="portfolioHead" >
 			<h2>portfolio</h2>
-			<img class="money"src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="">
+			<img class='clicker' class="money"src="<?php bloginfo('template_directory'); ?>/images/money.png" alt="">
 			
 		</div>
 		<div class="portfolioMain">
@@ -29,7 +29,7 @@
 
 			    <div class="portfolioItem">
 			    	<?php $image = get_sub_field('images') ?> 
-			    	<img src="<?php echo $image['sizes']['large'] ?>" alt=""> 
+			    	<img src="<?php echo $image['sizes']['large'] ?>" alt="portfolio item <?php the_sub_field('project_title') ?>"> 
 			    	<div class="portfolioDesc">
 			    		<p class="portfolioTitle"><a href="<?php the_sub_field('project_link'); ?>" target="blank"><?php the_sub_field('project_title') ?></a></p>
 			    		<p><?php the_sub_field('project_description'); ?></p>
@@ -46,7 +46,7 @@
 <!-- SKILLS -->
 	<section id="skills">
 		<div class="skillsHead">
-			<img src="<?php bloginfo('template_directory'); ?>/images/glasses.png" alt="">
+			<img class='clicker' src="<?php bloginfo('template_directory'); ?>/images/glasses.png" alt="">
 			<h2>skills</h2>
 		</div>
 		<div class="skillsmain">
@@ -55,7 +55,6 @@
 					<?php $devicon = get_sub_field('skills_dev') ?> 
 					<?php echo $devicon ?>
 			
-			        	<!-- <?php the_sub_field('skills_dev') ?> -->
 			      
 			    	<?php endwhile;//end of skills loop ?>	
 			    </div>

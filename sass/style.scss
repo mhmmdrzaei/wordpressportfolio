@@ -21,7 +21,7 @@ $font: 'Montserrat', sans-serif;
 
 @mixin fontSize($sizeValue){
     font-size: $sizeValue * 1px;
-    font-size: ($sizeValue/10) * 1rem;
+    font-size: calc($sizeValue/10) * 1rem;
 }
 .flex {
 	display: flex;
@@ -231,6 +231,9 @@ h2.nameAnimate {
 .fa-bars{
 	display: none;
 }
+.fa-bars:before{
+	display: none;
+}
 
 
 // about section 
@@ -274,6 +277,9 @@ h2.nameAnimate {
 	justify-content: space-between; 
 	align-items: center;
 	padding: 50px 0;
+	img {
+		max-width: 400px;
+	}
 	.portfolioDesc {
 		width: 44%;
 		text-align: right;
@@ -287,6 +293,7 @@ h2.nameAnimate {
 			a {
 				text-decoration: none;
 				border-bottom: 3px solid;
+				line-height: 25px;
 				&:hover {
 					border-bottom: 3px solid #FEF800;
 					 animation: fadeIn .5s;
@@ -542,6 +549,7 @@ h2.nameAnimate {
 		padding: 10px 0;
 		img {
 			max-width: 95%;
+
 			}
 		.portfolioDesc {
 		width: 100%;
